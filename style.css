@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-image: url("./images/papelvelho.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header,
+section,
+aside,
+footer {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* 0.8 é a opacidade, ajuste conforme necessário */
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 115, 0);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 115, 0);;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  display: flex;
+  margin: 20px;
+}
+
+section {
+  padding: 20px;
+  width: 70%;
+  margin-right: 20px;
+}
+
+.carousel-container {
+  width: 400px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 400px;
+  height: 200px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+aside {
+  padding: 20px;
+  width: 30%;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-buttons button {
+  background-color: rgb(255, 115, 0);;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  color: rgb(255, 115, 0);;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section,
+  aside {
+    width: 100%;
+    margin-right: 0;
+  }
+}

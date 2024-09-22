@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Centro-Sul do Ceará</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sobre o Site</h2>
+        <p>
+          Este é um site fictício criado como parte de um projeto de
+          desenvolvimento web. Ele utiliza imagens do Centro-Sul do Ceará.
+        </p>
+
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="./images/ailfaicó.jpg" alt="Imagem 1" />
+            <img src="./images/piauizinhoico.jpg" alt="Imagem 2" />
+            <img src="./images/saoromaoOros.jpg" alt="Imagem 3" />
+            <img src="./images/ailfaicó.jpg" alt="Imagem 4" />
+          </div>
+        </div>
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </section>
+
+      <aside>
+        <h2>Links Relacionados</h2>
+        <div class="social-buttons">
+          <button onclick="window.location.href='https://www.linkedin.com'">
+            LinkedIn
+          </button>
+          <button onclick="window.location.href='https://wa.me/5511999999999'">
+            WhatsApp
+          </button>
+          <button onclick="window.location.href='https://www.instagram.com'">
+            Instagram
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Centro-Sul do Ceará. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
